@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="css\styles.css" />
 </head>
 
+<!-- Web Page Contents -->
+
 <body>
     <!-- Contents -->
     <div class="flex-container">
         <main>
             <!-- Article 01 Calculator & Feature Advantages and Disclaimer -->
-            <div class="articleone-container">
+            <div class="articleone-container">>
                 <article>
                     <!-- Article 01 Section 01 Calculator -->
                     <div class="artonesecone-container">
@@ -65,12 +67,96 @@
                         </div>
                     </div>
                     <br>
+
+                    <!-- Article 01 Section 02 Feature Advantages and Disclaimer -->
+                    <div class="artonesectwo-container">
+                        <!-- Article 01 Section 02 Feature Advantages -->
+                        <div class="features-container">
+                            <h1>Feature Advantages:</h1>
+                            <ol type="1">
+                                <li>Calculate body weight.</li>
+                                <li>Determine ideal body weight category.</li>
+                                <li>Helps to prepare body weight loss program.</li>
+                            </ol>
+                            <p>The calculator will give you an idea of how your weight compares to the general values.
+                                Body Mass Index (or BMI) is calculated as your weight (in kilograms)
+                                divided by the square of your height (in meters) or BMI = kg/m<sup>2</sup>.
+                            </p>
+                        </div>
+                        <br>
+
+                        <!-- Article 01 Section 02 Disclaimer Panel -->
+                        <div class="disclaimer-container">
+                            <strong>
+                                <p><u>Disclaimer!</u>
+                                    <br>
+                                    This calculator should only be used by adults
+                                    (pregnant or breastfeeding women should not rely on this BMI reading)
+                                    and no action should be taken based on its value
+                                    other than consulting a qualified person such as a doctor.
+                                </p>
+                            </strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <br>
+
+            <!-- Article 02 BMI Result, Explanation & Disclaimer -->
+            <div class="articletwo-container">
+                <article>
+                    <!-- Article 02 Section 01 BMI Result Display -->
+                    <div class="arttwosecone-container">
+                        <h1>Your BMI Result</h1>
+                        <div class="bmidisplay-container">
+                            <h3>You are...</h3>
+                            <div class="result-display">
+                                <h2 id="resultcal">0.00</h2>
+                                <h2 id="resultcategory">-</h2>
+                            </div>
+                        </div>
+                        <br>
+
+                        <!-- Article 02 Section 01-A BMI Result Explanation -->
+                        <h3>Based on your calculation...</h3>
+                        <div class="arttwoseconea-container">
+                            <p id="resultstatement"></p>
+                            <p id="resultsuggestion"></p>
+                        </div>
+                        <br>
+                        <br>
+                        <button type="button">Consult to a Nutritionist via app</button>
+                        <button type="button">Book an offline session</button>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!-- Article 02 Section 01-B BMI Result Disclaimer -->
+                        <div class="arttwoseconeb-container">
+                            <p>
+                                BMI does not fully represent a comprehensive diagnosis of a person's health and disease
+                                risk.
+                                You need further consultation regarding your risks and concerns related to your weight.
+                            </p>
+                            <button type="button">Consult to a Doctor via app</button>
+                            <button type="button">Book an offline session</button>
+                        </div>
+                    </div>
                 </article>
             </div>
         </main>
     </div>
 
+    <!-- Web Page Footer -->
     <footer>
-
+        <div class="footer-container">
+            <a href="" class="tos">Term of Service</a>
+            <a href="" class="privacypolicy">Privacy Policy</a>
+            <p>&copy;BMICalculator2024</p>
+        </div>
     </footer>
+
+    <script src="js\scrip.js"></script>
 </body>
+
+</html>
