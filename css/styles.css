@@ -1,1 +1,128 @@
-/* CSS PAGE */
+/* Global Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+/* Article 01 Calculator and Feature Advantages & Disclaimer */
+.articleone-container {
+    background-color: azure;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 50%;
+}
+
+.inputfield {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+    /* Article 01 Section 01 Calculator */
+        .artonesecone-container {
+            background-color: #d7ecff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .calform-container {
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            background-color: #fff7f0;;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+    /* Article 01 Section 02 Feature Advantages & Disclaimer */
+        .artonesectwo-container {
+            background-color: #d7ecff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .features-container {
+            background-color: aliceblue;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .disclaimer-container {
+            background-color: #e6e600;
+            padding: 15px;
+        }
+
+/* Article 02 Section 01 BMI Result, Explanation & Disclaimer */
+.articletwo-container {
+    background-color: azure;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 50%;
+}
+
+    /* Article 02 Section 01 BMI Result Display */
+    .arttwosecone-container {
+        background-color: #d7ecff;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .bmidisplay-container {
+        background-color: aliceblue;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .result-display {
+        background-color: #fff7f0;;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+        /* Article 02 Section 01-A BMI Result Explanation */
+        .arttwoseconea-container {
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* Article 02 Section 01-B BMI Result Disclaimer */
+        .arttwoseconeb-container {
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 10px;
+        }
+                
+        .resultdisclaimer-container {
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+/* Web Page Footer */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    background-color: azure;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}
