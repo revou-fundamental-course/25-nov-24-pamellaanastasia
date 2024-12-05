@@ -1,23 +1,19 @@
 // Form Validation & BMI Calculation Variables
-const weight = document.getElementById('inputweight').value;
-const height = document.getElementById('inputheight').value;
-const age = document.getElementById('inputage').value;
-
-console.log('Weight' + weight);
-console.log('Height' + height);
-console.log('Age' + age);
 
 // Form Validation
 function validate() {   
+    const weight = document.getElementById('inputweight').value;
+    const height = document.getElementById('inputheight').value/100;
+    const age = document.getElementById('inputage').value;
     if (weight != '' && height != '' && age != '') {
-        calculate();
+        calculate(weight, height, age);
     } else {
         alert('Please fill in all field first!');
     }
 }
 
 // BMI Calculation
-function calculate() {
+function calculate(weight, height, age) {
     var bmi = weight / (height * height);
     document.getElementById('resultcal').innerHTML = bmi.toFixed(2).toString(2);
     if (bmi < 18.5) {
