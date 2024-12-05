@@ -1,1 +1,76 @@
-<!-- HTML PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Web Page Index -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator - Home</title>
+    <link rel="stylesheet" href="css\styles.css" />
+</head>
+
+<body>
+    <!-- Contents -->
+    <div class="flex-container">
+        <main>
+            <!-- Article 01 Calculator & Feature Advantages and Disclaimer -->
+            <div class="articleone-container">
+                <article>
+                    <!-- Article 01 Section 01 Calculator -->
+                    <div class="artonesecone-container">
+                        <h1>BMI Calculator</h1>
+                        <div class="calform-container">
+                            <p>Ideal body weight is everyone's dream.
+                                Not only does it have a body shape that supports your appearance,
+                                ideal body weight also indicates a healthy body condition.
+                                <br>
+                                Looking to achieve your dream body?
+                                Start by calculating your ideal body weight with our easy-to-use tool!
+                            </p>
+
+                            <div class="form-container">
+                                <form id="bmi-form" action="" method="post">
+                                    <!-- Article 01 Section 01 Age Input Box -->
+                                    <fieldset form="bmi-form">
+                                        <legend>Your Age (year):</legend>
+                                        <input type="number" min="1" max="500" id="inputage" class="inputfield"
+                                            placeholder="Age" required>
+                                    </fieldset>
+                                    <br>
+
+                                    <!-- Article 01 Section 01 Weight Input Box -->
+                                    <fieldset form="bmi-form">
+                                        <legend>Your Weight (kg):</legend>
+                                        <input type="number" min="1" max="500" id="inputweight" class="inputfield"
+                                            placeholder="Weight" required>
+                                    </fieldset>
+                                    <br>
+
+                                    <!-- Article 01 Section 01 Height Input Box -->
+                                    <fieldset form="bmi-form">
+                                        <legend>Height (cm):</legend>
+                                        <input type="number" min="1" max="500" id="inputheight" class="inputfield"
+                                            placeholder="Height" required>
+                                    </fieldset>
+                                    <br>
+                                    <br>
+                                </form>
+
+                                <!-- Article 01 Section 01 Calculate & Reset Button -->
+                                <button type="button" class="btn" id="calbutton"
+                                    onclick="validate();">Calculate</button>
+                                <button type="button" class="btn" id="resetbutton" onclick="clear();">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
